@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Hi "/>
+  <div>
+    <!-- <NFTCard v-for="nftData in nftDataList" :key="nftData.name" :ntfData="nftData"/> -->
+    <PageStore/>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import NFTCard from './components/nftCard/NFTCard.vue';
+import PageStore from './pages/Store.vue';
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
+    PageStore,
+    // NFTCard,
+  },
+  
+  
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px; */
 }
 </style>

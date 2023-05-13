@@ -1,0 +1,13 @@
+body {
+   margin: 0;
+   padding: 0px;
+}
+#app{
+   display: flex;
+   justify-content: center;
+   background-color: #1b0540;
+}
+html{
+   height: 100vh;
+   background-color: #1b0540;
+}
