@@ -17,5 +17,6 @@ export default {
       color: #fff;
       font-weight: 800;
       font-size: 16px;
+      cursor: pointer;
     }
 </style>

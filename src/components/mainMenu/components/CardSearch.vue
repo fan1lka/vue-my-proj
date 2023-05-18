@@ -3,14 +3,25 @@
    <div class="magnify">
       
    </div>
-   <input type="text" value="Search">
+   <input v-model="searchValue" type="text" placeholder="Search" @input="setSearchValue()" >
   </div>
 </template>
 
 <script>
 export default {
-
+   data(){
+      return{
+         searchValue: "",
+         
+      }
+   },
+   methods: {
+      setSearchValue(){
+         this.$emit("searchValueEmit", this.searchValue)
+      }
+   }
 }
+
 </script>
 
 <style scoped>
@@ -41,4 +52,16 @@ export default {
       height: 24px;
       margin: 0 12px;
    }
+   ::-webkit-input-placeholder {
+      color:#FF00D6;
+   }
+   ::-moz-placeholder {
+      color:#FF00D6;
+   }/* Firefox 19+ */
+   :-moz-placeholder {
+      color:#FF00D6;
+   }/* Firefox 18- */
+   :-ms-input-placeholder {
+      color:#FF00D6;
+      }
 </style>

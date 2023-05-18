@@ -4,7 +4,7 @@
          <CardImage :imgLink="ntfData.imgLink"/>
          <CardName :cardTitle="ntfData.name"/>
          <CardPrice :cardPrice="ntfData.price"/>
-         <CardButton/>
+         <CardButton @click="$emit('buyNft')"/>
       </div>
    </div>
 </template>
